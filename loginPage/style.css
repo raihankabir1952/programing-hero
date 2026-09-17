@@ -1,0 +1,139 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /* এটি ভেতরের প্যাডিং ঠিক রাখবে */
+    font-family: sans-serif;
+}
+
+body {
+    background-color: azure; /* পুরো পেজের ব্যাকগ্রাউন্ড */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* এই মেইন বক্সটি দুই পাশকে একসাথে ধরে রাখবে */
+.hole-page {
+    display: flex;
+    width: 750px;
+    height: 500px; 
+    /* background-color: #350404; 
+    border-radius: 15px; 
+    box-shadow: 0px 14px 28px rgba(0,0,0,0.3); */
+}
+
+/* বাম পাশের গ্রেডিয়েন্ট অংশ */
+.left-side {
+    width: 40%; /* ৪০% জায়গা নিবে */
+    height: 100%;
+    background: linear-gradient(to right, #ff3300, #ff3b30, #a276ff, #9b51e0); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.left-side h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.left-side p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 40px;
+}
+
+.left-side button {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 14px 50px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ডান পাশের ফর্ম অংশ */
+.right-side {
+    width: 60%; /* ৬০% জায়গা নিবে */
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.right-side h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* সোশ্যাল আইকন পাশাপাশি করার জন্য */
+.social-container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* আইকনগুলো নিচে নিচে নেমে গিয়েছিল, এখন পাশাপাশি গোল হয়ে বসবে */
+.social-container img {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    margin: 0 7px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    object-fit: contain; /* আইকন ইমেজ ঠিক রাখার জন্য */
+    cursor: pointer;
+}
+
+.right-side p {
+    font-size: 13px;
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+.social-media
+{
+    display: flex;
+    gap: 10px;
+}
+
+.right-side input {
+    background-color: #f4f4f6;
+    border: none;
+    padding: 15px;
+    margin: 8px 0;
+    width: 75%; /* ইনপুট ফিল্ডের সাইজ ছবির মতো করা হয়েছে */
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.right-side button {
+    border-radius: 50px;
+    border: none;
+    background-color: #ff2a00;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 14px 55px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

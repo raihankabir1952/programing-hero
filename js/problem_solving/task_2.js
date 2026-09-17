@@ -1,0 +1,4 @@
+//Reverse an Array
+let arr=[10,20,30,40,50]
+let res=arr.reverse()
+console.log(res)

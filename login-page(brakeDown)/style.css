@@ -1,0 +1,133 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /* প্যাডিং দিলেও যেন বক্সের সাইজ বড় না হয় */
+    font-family: sans-serif; /* সুন্দর ফন্ট সেট করার জন্য */
+}
+
+body {
+    background-color: #1a1e29; /* স্ক্রিনের পেছনের অন্ধকার ব্যাকগ্রাউন্ড */
+    display: flex; /* ফ্লেক্সবক্স চালু করা হলো */
+    justify-content: center; /* ডানে-বামে মাঝখানে আনার জন্য */
+    align-items: center; /* উপর-নিচে মাঝখানে আনার জন্য */
+    min-height: 100vh; /* পুরো স্ক্রিনের উচ্চতা নেওয়া হলো */
+}
+
+.hole-page {
+    display: flex; /* বাম এবং ডান পাশকে পাশাপাশি বসানোর জন্য */
+    width: 850px; /* পুরো কার্ডের চওড়া সাইজ */
+    height: 500px; /* পুরো কার্ডের ফিক্সড উচ্চতা */
+    background-color: #ffffff; /* ভেতরের মূল সাদা ব্যাকগ্রাউন্ড */
+    border-radius: 15px; /* কার্ডের চারকোনা গোল করার জন্য */
+    overflow: hidden; /* ভেতরের কালার যেন কোনা দিয়ে বাইরে বের না হয় */
+    box-shadow: 0px 14px 28px rgba(0,0,0,0.3); /* কার্ডের নিচে সুন্দর ছায়া */
+}
+
+.left-side {
+    width: 40%; /* পুরো কার্ডের ৪০% জায়গা এই অংশটি নিবে */
+    height: 100%; /* মেইন বক্সের সমান উচ্চতা */
+    /* বাম থেকে ডানে লাল ও পার্পল কালারের মিশ্রণ */
+    background: linear-gradient(to right, #ff3300, #ff3b30, #a276ff, #9b51e0); 
+    display: flex;
+    flex-direction: column; /* ভেতরের উপাদানগুলো একটার নিচে আরেকটা বসবে */
+    justify-content: center; /* উপর-নিচে মাঝখানে আনার জন্য */
+    align-items: center; /* ডানে-বামে মাঝখানে আনার জন্য */
+    text-align: center; /* লেখার অ্যালাইনমেন্ট সেন্টারে রাখার জন্য */
+    padding: 40px;
+    color: white; /* ভেতরের সব লেখার কালার সাদা */
+}
+
+/* বাম পাশের শিরোনাম */
+.left-side h1 {
+    font-size: 32px;
+    margin-bottom: 25px; /* লেখার নিচে গ্যাপ তৈরির জন্য */
+}
+
+/* বাম পাশের ছোট লেখা */
+.left-side p {
+    font-size: 14px;
+    line-height: 22px; /* লাইনের মাঝখানের ফাঁকা জায়গা */
+    margin-bottom: 40px;
+}
+
+/* বাম পাশের স্বচ্ছ বর্ডারওয়ালা বাটন */
+.left-side button {
+    background-color: transparent; /* ভেতরের অংশ স্বচ্ছ */
+    border: 2px solid #ffffff; /* সাদা বর্ডার */
+    color: #ffffff;
+    padding: 14px 50px;
+    border-radius: 50px; /* বাটনটি ক্যাপসুলের মতো গোল হবে */
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase; /* লেখা বড় হাতের করার জন্য */
+    letter-spacing: 1px;
+}
+
+.right-side {
+    width: 60%; /* পুরো কার্ডের বাকি ৬০% জায়গা এটি নিবে */
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* উপাদানগুলো নিচে নিচে সাজানোর জন্য */
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* ডান পাশের শিরোনাম */
+.right-side h1 {
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* সোশ্যাল আইকন কন্টেইনার (আইকনগুলো পাশাপাশি করার মূল চাবিকাঠি) */
+.social-icons {
+    display: flex; /* আইকন তিনটিকে এক লাইনে পাশাপাশি আনার জন্য */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* প্রতিটি আইকন ইমেজের নিজস্ব স্টাইল */
+.social-icons img {
+    border: 1px solid #DDDDDD; /* হালকা ধূসর বর্ডার */
+    border-radius: 50%; /* পুরোপুরি গোল করার জন্য */
+    margin: 0 7px; /* আইকনগুলোর মাঝখানে ডানে-বামে ফাঁকা জায়গা */
+    height: 40px;
+    width: 40px;
+    padding: 10px; /* গোল বর্ডারের ভেতরে আইকনটি যেন ছোট ও সুন্দর দেখায় */
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* ফর্মের ইনপুট বক্স সমূহ */
+.right-side input {
+    background-color: #f4f4f6; /* ছবির মতো হালকা ছাই রঙের ব্যাকগ্রাউন্ড */
+    border: none; /* ডিফল্ট কালো বর্ডার বাদ দেওয়া হলো */
+    padding: 15px;
+    margin: 8px 0; /* ইনপুট বক্সগুলোর মাঝখানে উপর-নিচে গ্যাপ */
+    width: 75%; /* ইনপুট বক্সের চওড়া সাইজ */
+    border-radius: 4px; /* কোনাগুলো সামান্য গোল করার জন্য */
+    font-size: 14px;
+    outline: none; /* ইনপুটে ক্লিক করলে যেন কোনো বর্ডার না আসে */
+}
+
+/* উজ্জ্বল লাল রঙের সাইন আপ বাটন */
+.right-side button {
+    border-radius: 50px; /* বাটনটি গোল ক্যাপসুলের মতো হবে */
+    border: none;
+    background-color: #ff2a00; /* টকটকে লাল রঙ */
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 14px 55px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+

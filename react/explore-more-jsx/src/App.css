@@ -1,0 +1,9 @@
+.start {
+  color: #008000;
+}
+.student {
+  color: black;
+  border: 1px solid #0000FF;
+  margin: 10px;
+  padding: 5px;
+}

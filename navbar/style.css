@@ -1,0 +1,67 @@
+body
+{
+    max-width: 12000px;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.nav
+{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    background-color: blanchedalmond;
+    padding: 20px;
+    /* justify-content: space-between; */
+}
+
+.nav a
+{
+    text-decoration: none;
+}
+
+/* navbar style2 */
+.nav2
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    background-color: aquamarine;
+    padding: 15px;
+}
+
+.nav2 a{
+    text-decoration: none;
+}
+
+.nav2 .login-space
+{
+    margin-left: auto;
+}
+
+.nav2 button {
+    background-color: #ff2a00;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav2 li img {
+    height: 40px; 
+    width: auto;  
+    /* display: block;
+    object-fit: contain; */
+}
+
+.nav2 li:first-child {
+    margin-right: 40px; 
+}

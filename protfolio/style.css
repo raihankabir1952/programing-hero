@@ -1,0 +1,245 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* body
+{
+    background-color: rgba(230, 188, 110, 0.792);
+} */
+
+.full_bg {
+    background-color: red;
+}
+
+.common-btn {
+    background-color: chocolate;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.common-btn-2 {
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    color: orange;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+nav {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1200px;
+    margin: auto; */
+    padding: 8px 0px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo-r {
+    color: chartreuse;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+
+/* hero style */
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero{
+
+    background-color: #FFF8F3;
+    padding: 40px 0;
+}
+
+.hero-left p {
+    font-weight: 600%;
+}
+
+.hero-left h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.hero-left-p1 {
+    font-size: 30px;
+}
+
+.hero-left-buttons {
+    margin-top: 25px;
+    /* margin-left: 100px; */
+}
+
+/* about us */
+.about-parent{
+    background-color: #FFF8F3;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.about-parent p{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.about-address-part{
+    display: flex;
+    justify-content: space-around;
+
+    margin: 10px;
+}
+
+.about-address-part div:hover{
+    background-color: burlywood;
+}
+
+/* What i do section css */
+.what-i-do-parent {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.what-i-do-card-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.what-i-do-card-container .what-i-do-card {
+  border: 2px solid #fd6e0a;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: left;
+}
+.what-i-do-card-container .what-i-do-card h2 {
+  margin: 10px 0;
+}
+.what-i-do-card-container .what-i-do-card p {
+  color: #757575;
+  font-size: 15px;
+}
+
+/* Resume Section */
+
+.resume {
+    margin: 80px auto;
+}
+
+.resume-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.resume-container {
+    display: flex;
+    gap: 60px;
+}
+
+.education,
+.experience {
+    flex: 1;
+}
+
+.education h2,
+.experience h2 {
+    margin-bottom: 25px;
+}
+
+.resume-item {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.resume-item h3 {
+    margin-bottom: 8px;
+}
+
+.resume-item h4 {
+    margin-bottom: 12px;
+    color: #666;
+    font-size: 17px;
+}
+
+.resume-item p {
+    color: #757575;
+    line-height: 1.7;
+}
+
+.resume-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* my amazing work css */
+.my-amazing-parent
+{
+    text-align: center;
+}
+
+.gallery
+{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px auto;
+    object-fit: cover;
+}
+
+/* footer */
+
+.footer
+{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 10px auto;
+    margin-top: 30px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}

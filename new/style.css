@@ -1,0 +1,38 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+     box-sizing: border-box;
+}
+
+body
+{
+    max-width: 1500px;
+    align-items: center;
+}
+
+.banner-section
+{
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+    padding-top: 30px; 
+
+}
+
+.banner
+{
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    max-width: 1500px;
+    margin-left: 20px;
+    padding: 30px;
+}
+
+.banner h1{
+    font-weight: bold;
+}

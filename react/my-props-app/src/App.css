@@ -1,0 +1,12 @@
+.active{
+    color: green;
+}
+.inactive{
+    color: rgb(213, 229, 142);
+}
+.escape{
+    color: rgb(236, 6, 6);
+}
+.stay{
+    color: rgb(6, 236, 6);
+}
