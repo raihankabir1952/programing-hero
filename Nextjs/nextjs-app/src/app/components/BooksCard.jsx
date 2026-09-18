@@ -1,14 +1,26 @@
 import React from 'react';
+import Link from 'next/link';
 
-const BooksCard = ({book}) => {
-    const{id, title, description} = book
+const BooksCard = ({ book }) => {
+    const { id, title, description } = book;
+
     return (
         <div className="card bg-base-100 shadow-sm border-amber-700">
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
+
                 <p>{description}</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+
+                <div className="card-actions justify-end gap-2">
+                    <button className="btn btn-primary">
+                        Buy Now
+                    </button>
+
+                    <Link href={`/Books/${id}`}>
+                        <button className="btn btn-primary">
+                            Show Details
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
